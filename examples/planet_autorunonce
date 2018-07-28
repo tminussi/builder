@@ -18,7 +18,7 @@ docker-compose -f planet.yml -p planet up -d --build
   echo '#!/bin/sh'
   echo ''
   echo 'sleep 1'
-  echo 'docker-compose -f /root/planet.yml -p planet start'
+  echo 'docker-compose -f /root/planet.yml -p planet up -d'
 } > /boot/autorun
 
 treehouses hotspot $hotspotname
